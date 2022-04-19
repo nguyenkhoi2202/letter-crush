@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>My-Bae</title>
+</head>
+<body>
+    <div> 
+        <h2>Có một lời yêu thương gửi tới em <img src="heart.jpeg" 
+            style="width: 26px; height: 26px;" alt=""/>  </h2><br/>
+        <label  for="fname">Nhập mật khẩu trái tim </label>
+        <img src="tym.png" style="width: 17px; height: 17px;" alt=""/><br/>
+        <input type="text" id="input" name="love"  value=""/> <br/>   <br/>
+        <button id="btnSubmit" type="button" class="btn btn-success">Success</button>
+    </div>
+    <script>
+        document.getElementById('btnSubmit').onclick = function(e){
+            var textinput = document.getElementById('input');
+            if(textinput.value.length == 0){
+                alert('Nhập mật khẩu tình yêu trước nhé <3')
+            }else if(textinput.value == 'anhyeuem'){
+                window.location.href = "love.html";
+            }else{
+                alert('Mật khẩu em nhập sai rùi :v')
+            }
+        }
+    </script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="./script.js"></script>
+        <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

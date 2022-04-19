@@ -1,0 +1,32 @@
+div {
+    display: block;
+    background-color: rgb(241, 206, 206);
+    width: 450px;
+    border: 15px solid rgb(240, 116, 136);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 400px;
+    margin-top: 29px;
+}
+
+
+
+h2{
+    color: rgb(103, 190, 248);
+}
+input {
+    width: 300px;
+}
+
+label {
+    color: rgb(237, 78, 206);
+}
+
+img{
+    animation: image 4s linear infinite;
+}
+@keyframes image{
+    0%{transform:  scale(.5);}
+    50%{transform:  scale(.9);}
+    100%{transform:  scale(.5);}
+}
